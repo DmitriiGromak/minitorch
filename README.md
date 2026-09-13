@@ -11,6 +11,172 @@ To access the autograder:
 * Module 4: https://classroom.github.com/a/04QA6HZK
 * Quizzes: https://classroom.github.com/a/bGcGc12k
 
+# Тесты для 3.3, 3.4
+В Gitlab нет GPU, а для этих тестов он нужен, поэтому та их нельзя запустить. Я локально их прогнал, у меня прошли
+=================================================================== test session starts ===================================================================
+platform linux -- Python 3.10.21, pytest-7.1.2, pluggy-1.6.0
+rootdir: /mnt/jack-7/dgromak/momo/minitorch, configfile: setup.cfg
+plugins: hydra-core-1.3.2, env-0.6.2, hypothesis-6.54.0
+collected 294 items / 237 deselected / 57 selected                                                                                                        
+
+tests/test_tensor_general.py .........................................................                                                              [100%]
+
+==================================================================== warnings summary =====================================================================
+tests/test_tensor_general.py: 16 warnings
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 1 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py: 4268 warnings
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/cudadrv/devicearray.py:888: NumbaPerformanceWarning: Host array used in CUDA kernel will incur copy overhead to/from device.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py: 11 warnings
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 2 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_one_args[cuda-fn5]
+tests/test_tensor_general.py::test_one_derivative[cuda-fn0]
+tests/test_tensor_general.py::test_one_derivative[cuda-fn3]
+tests/test_tensor_general.py::test_one_derivative[cuda-fn10]
+tests/test_tensor_general.py::test_sum_practice2
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 3 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_one_derivative[cuda-fn0]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 6 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_one_derivative[cuda-fn0]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 4 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_one_derivative[cuda-fn0]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 8 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_one_derivative[cuda-fn1]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 12 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_one_derivative[cuda-fn3]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 9 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_one_derivative[cuda-fn3]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 27 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_one_derivative[cuda-fn8]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 18 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_sum_practice_other_dims
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 16 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================================== 57 passed, 237 deselected, 4308 warnings in 222.25s (0:03:42) ==============================================
+=================================================================== test session starts ===================================================================
+platform linux -- Python 3.10.21, pytest-7.1.2, pluggy-1.6.0
+rootdir: /mnt/jack-7/dgromak/momo/minitorch, configfile: setup.cfg
+plugins: hydra-core-1.3.2, env-0.6.2, hypothesis-6.54.0
+collected 294 items / 287 deselected / 7 selected                                                                                                         
+
+tests/test_tensor_general.py .......                                                                                                                [100%]
+
+==================================================================== warnings summary =====================================================================
+tests/test_tensor_general.py::test_mul_practice1
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:371: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+    warnings.warn(problem)
+
+tests/test_tensor_general.py::test_mul_practice1
+tests/test_tensor_general.py::test_mul_practice3
+tests/test_tensor_general.py::test_mul_practice3
+tests/test_tensor_general.py::test_bmm[cuda]
+tests/test_tensor_general.py::test_bmm[cuda]
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 1 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py: 111 warnings
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/cudadrv/devicearray.py:888: NumbaPerformanceWarning: Host array used in CUDA kernel will incur copy overhead to/from device.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_mul_practice4
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 35 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_mul_practice4
+tests/test_tensor_general.py::test_bmm[cuda]
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 4 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_mul_practice5
+tests/test_tensor_general.py::test_bmm[cuda]
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 8 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+tests/test_tensor_general.py::test_bmm[cuda]
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 2 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 16 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 24 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 64 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 6 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 3 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 48 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 12 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 18 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 27 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 36 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 5 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+tests/test_tensor_general.py::test_bmm[cuda]
+  /mnt/jack-1/dgromak/miniconda3/envs/minitorch/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 32 will likely result in GPU under-utilization due to low occupancy.
+    warn(NumbaPerformanceWarning(msg))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================================== 7 passed, 287 deselected, 141 warnings in 11.13s =====================================================
+
+
 # 1.5
 ## Simple
 Epoch  10  loss  31.571232946376742 correct 29
