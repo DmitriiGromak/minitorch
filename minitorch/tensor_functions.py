@@ -228,6 +228,7 @@ class Permute(Function):
             inverse_order[o] = i
         return grad_output._new(grad_output._tensor.permute(*inverse_order)), 0.0
 
+
 class View(Function):
     @staticmethod
     def forward(ctx: Context, a: Tensor, shape: Tensor) -> Tensor:
