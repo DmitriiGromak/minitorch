@@ -1,4 +1,5 @@
 # MODULE 0
+from .operators import *  # noqa: F401,F403
 # MODULE 1
 import minitorch.scalar_functions as scalar_functions  # noqa: F401,F403
 
